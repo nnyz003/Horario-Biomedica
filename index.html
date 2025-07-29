@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi Horario - ITM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>📚 Horario de Clases - ITM</h1>
+    <button onclick="cambiarTema()">🌗 Tema</button>
+    <button onclick="reiniciarHorario()">🌀 Reiniciar Horario</button>
+  </header>
+
+  <main>
+    <section>
+      <table id="horario">
+        <thead>
+          <tr>
+            <th>Hora</th>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miércoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+            <th>Sábado</th>
+            <th>Domingo</th>
+          </tr>
+        </thead>
+        <tbody id="horario-body"></tbody>
+      </table>
+    </section>
+
+    <section id="calendario-section">
+      <h2>📆 Calendario de Tareas y Parciales</h2>
+      <input type="date" id="fecha-tarea">
+      <input type="text" id="descripcion-tarea" placeholder="Ej: Parcial de Geometría a las 2:00 pm">
+      <button onclick="agregarTarea()">Agregar</button>
+      <ul id="lista-tareas"></ul>
+    </section>
+  </main>
+
+  <audio id="alarma-sonido" src="https://www.soundjay.com/buttons/sounds/button-3.mp3" preload="auto"></audio>
+  
+  <script src="script.js"></script>
+</body>
+</html>
