@@ -1,0 +1,93 @@
+:root {
+  --fondo: #fff0f5;
+  --texto: #4b004b;
+  --claro: #ffe6f0;
+  --oscuro: #2c003e;
+  --destacado: #ba55d3;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--fondo);
+  color: var(--texto);
+  margin: 0;
+  padding: 20px;
+  transition: all 0.4s ease;
+}
+
+body.dark {
+  --fondo: #1f1f2e;
+  --texto: #ffffff;
+  --claro: #362342;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #ff69b4;
+  color: white;
+  font-weight: bold;
+  margin: 5px;
+}
+
+button:hover {
+  background-color: #c71585;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 2px solid #dda0dd;
+  padding: 10px;
+  min-height: 80px;
+  background-color: var(--claro);
+  color: var(--texto);
+}
+
+th {
+  background-color: var(--destacado);
+  color: white;
+}
+
+td.editable:hover {
+  cursor: pointer;
+  background-color: #f8d1e8;
+}
+
+#calendario-section {
+  margin-top: 40px;
+  background-color: var(--claro);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+input[type="date"], input[type="text"] {
+  padding: 8px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+ul#lista-tareas {
+  list-style: none;
+  padding: 0;
+}
+
+ul#lista-tareas li {
+  background: #f9c9e3;
+  padding: 8px;
+  border-radius: 8px;
+  margin-top: 5px;
+}
